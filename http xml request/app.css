@@ -1,0 +1,50 @@
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+button {
+  font: inherit;
+  background: forestgreen;
+  border: 1px solid #2f02ac;
+  color: white;
+  cursor: pointer;
+  padding: 2rem 2rem;
+  font-size: 1.5rem;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover,
+button:active {
+  background: red;
+  border-color: red;
+}
+
+#control-center {
+  border: 2px solid black;
+  margin: 5rem;
+  padding: 2rem;
+}
+
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
