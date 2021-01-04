@@ -1,1 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript JSON parse() Method</title>
+  </head>
+
+  <body>
+    <h1>JavaScript JSON parse() Method</h1>
+
+    <p id="jp"></p>
+
+    <script>
+      var obj = JSON.parse(
+        '{"var1":"Hello",	"var2":"World!" , "var3":"welcome"}'
+      );
+
+      document.getElementById("jp").innerHTML =
+        obj.var1 + " " + obj.var2 + " " + obj.var3;
+    </script>
+  </body>
+</html>
 
