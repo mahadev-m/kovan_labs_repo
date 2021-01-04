@@ -1,1 +1,89 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<title>Employee registration form</title>
+<!--<meta name="keywords" content="example, JavaScript Form Validation, Sample registration form" />-->
+<link rel='stylesheet' href='style.css' type='text/css' />
+<script src="reg.js"></script>
+</head>
+<!--<body onload="document.registration.userid.focus();">-->
+<h1>Employee Registration Form</h1>
 
+<form name='registration' type="get" action = "submit.html" onSubmit="return results(registration);">
+<ul>
+<li><label for="userid">Employee id:</label></li>
+<li><input type="text" id="Eid" name="userid" size="12" required/></li>
+
+<li><label for="username">Name:</label></li>
+<li><input type="text" id="uname" name="username" size="50" required/></li>
+
+<li><label for="address">Address:</label></li>
+<li><input type="text" id="add" name="address" size="50" required/></li>
+
+<li><label for="country">Country:</label></li>
+<li><select name="country" id="coun" required>
+<option selected="" value="Default">(Please select a country)</option>
+<option value="Australia">Australia</option>
+<option value="Canada">Canada</option>
+<option value="India">India</option>
+<option value="Russia">Russia</option>
+<option value="USA">USA</option>
+<option value="UK">UK</option>
+</select></li>
+
+<li><label for="zip">ZIP Code:</label></li>
+<li><input type="number" name="zip" id="zc" required/></li>
+
+<li><label for="email">Email:</label></li>
+<li><input type="email" name="email" id="em" size="50" required/></li>
+
+<li><label for="mobile">Mobile No:</label></li>
+<li><input type="number" name="mobile" id="MN" size="50" required/></li>
+
+<li><label for="pw1">Password:</label></li>
+<!--<li><input type="password" name="passid" size="12" required /></li>-->
+ <li><input type="password" id="pw1" name="passid" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required
+
+ title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required></li>
+ 
+ 
+<li><label for="pw2">Confirm Password:</label></li>
+<li><input type="password" id= "pw2" name="cpw"  required /></li>
+
+
+
+<li><label>gender:</label>
+
+
+    <INPUT TYPE="Radio" Name="Gender" id="Male" Value="Male" checked><span>Male</span>
+    <INPUT TYPE="Radio" Name="Gender" id="female" Value="Female"><span>Female</span></li>
+
+
+    <!--<li><input type="radio" name="msex" id="male" value="Male"  /><span>Male</span></li>
+    <li><input type="radio" name="fsex" id="female" value="Female"  /><span>Female</span></li>-->
+
+   
+     
+       
+
+
+
+
+<li><label>Language:</label></li>
+<li><input type="checkbox" name="en" value="en"/><span>English</span></li>
+<li><input type="checkbox" name="nonen" value="noen" /><span>Tamil</span></li>
+
+
+<li><label for="desc">About:</label></li>
+<li><textarea name="desc" id="desc"></textarea></li>
+<li><input type="submit" name="submit" value="Submit" /></li></ul>
+<!--<li><button  value="submit" type="submit" display()">Submit</button> <br></li>-->
+
+</ul>
+
+</form>
+
+
+
+</body>
+</html>

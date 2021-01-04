@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title>Submit Button Redirect</title>
+    <script language="JavaScript">
+      function getParams() {
+        var idx = document.URL.indexOf("?");
+        var params = new Array();
+        if (idx != -1) {
+          var pairs = document.URL.substring(
+            idx + 1,
+            document.URL.length
+          ).split("&");
+          // document.write(document.URL)
+          for (var i = 0; i < pairs.length; i++) {
+            nameVal = pairs[i].split("=");
+            params[nameVal[0]] = nameVal[1];
+          }
+        }
+        return params;
+      }
+      params = getParams();
+      userid = unescape(params["userid"]);
+      username = unescape(params["username"]);
+      address = unescape(params["address"]);
+
+      country = unescape(params["country"]);
+      zip = unescape(params["zip"]);
+      email = unescape(params["email"]);
+
+      mobile = unescape(params["mobile"]);
+      gender = unescape(params["gender"]);
+
+      document.write("<strong>REGISTRATION DETAILS</strong><br>");
+      document.write("Employee ID :" + userid + "<br>");
+      document.write("Employee Name            : " + username + "<br>");
+      document.write("Address                  : " + address + "<br>");
+
+      document.write("Country                  : " + country + "<br>");
+      document.write("ZIP Code                 : " + zip + "<br>");
+      document.write("Email                    : " + email + "<br>");
+
+      document.write("Mobile                   : " + mobile + "<br>");
+      alert("sucessfully Submitted");
+    </script>
+  </head>
+  <body></body>
+</html>
