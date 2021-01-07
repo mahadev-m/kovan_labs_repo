@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>object prototype models</title>
+    <body>
+      <p id="op"></p>
+
+      <script>
+        function fruits() {
+          this.name = "watermelon";
+          this.season = "summer";
+        }
+
+        function apple() {
+          fruits.call(this);
+        }
+
+        apple.prototype = Object.create(fruits.prototype);
+        const app = new apple();
+
+        document.write(this.name + this.season);
+
+        alert("the fruit name is " + app.name);
+        alert("the season is " + app.season);
+      </script>
+    </body>
+  </head>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Object Prototypes</title>
+  </head>
+
+  <body>
+    <h2>JavaScript Object Prototypes</h2>
+
+    <p id="op"></p>
+
+    <script>
+      function Student(a, b) {
+        this.name = a;
+        this.id = b;
+      }
+
+      Student.prototype.age = 12;
+
+      var s1 = new Student("Dinesh", 67);
+
+      document.getElementById("op").innerHTML =
+        s1.name + " is " + s1.age + " years old. Id Number is " + s1.id;
+    </script>
+  </body>
+</html>

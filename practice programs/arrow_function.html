@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      let People = function (person, age) {
+        this.person = person;
+        this.age = age;
+        this.info = function () {
+          document.write(this + " ");
+
+          document.write(
+            this.person + " is " + this.age + " years old" + "<br>"
+          );
+        };
+      };
+
+      let person1 = new People("John", 21);
+
+      person1.info();
+
+      let separated = person1.info;
+
+      separated();
+    </script>
+  </body>
+</html>
