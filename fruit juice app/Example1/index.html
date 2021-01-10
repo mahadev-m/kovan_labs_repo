@@ -1,1 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <script src="./app.js"></script>
+  <head>
+    <title>Fruit Shop</title>
+  </head>
 
+  <body onload="initJuiceList()">
+    <div>
+      <input type="text" id="txtJuiceName" />
+      <button type="button" id="btnSave" onclick="btnSaveClick()">Save</button>
+      <button type="button" id="btnUpdate" onclick="btnUpdateClick()" disabled>
+        Update
+      </button>
+    </div>
+    <div>
+      <table id="tblJuiceList">
+        <!-- <tr>
+          <th>Juice Name</th>
+          <th>Price</th>
+          <th></th>
+        </tr> -->
+      </table>
+    </div>
+  </body>
+</html>
