@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  /* font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif; */
+  font-family: "cursive ", "ui-monospace";
+  align-items: center;
+  /* justify-content: center; */
+  display: flex;
+}
+#mainFrame {
+  background-color: #ff0000;
+  border-radius: 10px;
+  box-shadow: 0px 5px 5px 10p (0, 0, 0, 0.3);
+  width: 600px;
+  overflow: hidden;
+  max-width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  /* padding-bottom: 20px; */
+}
+#heading {
+  text-align: center;
+  font-family: cursive;
+  color: rgb(121, 48, 6);
+  padding: 20px;
+  font-weight: 700;
+  font-size: 20px;
+}
+#listContainer {
+  box-sizing: border-box;
+  width: 100%;
+}
+#listContainer h2 {
+  text-align: center;
+  font-size: 2em;
+  font-family: cursive;
+  color: black;
+}
+#products table {
+  margin-left: auto;
+  margin-right: auto;
+}
+#products {
+  padding: 20px;
+}
+table {
+  /* border: 2px solid black; */
+}
+td,
+tr,
+th {
+  border: 2px solid #33cc33;
+  /* border-radius: 50%; */
+  text-align: center;
+  padding: 20px;
+  color: red;
+  background-color: #33cc33;
+}
+#btn1,
+#btn2,
+#btn3,
+#btn4,
+#btn5,
+#btn6,
+#btn7,
+#btn8,
+#btn9,
+#btn10 {
+  cursor: pointer;
+  width: 50px;
+}
+#bill {
+  background-color: #009900;
+  border-radius: 10px;
+  box-shadow: 0px 5px 5px 10px rgba(0, 0, 0, 0.3);
+  width: 600px;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  position: absolute;
+  overflow: hidden;
+  max-width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+#billCounter {
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 0px 5px 5px 10px rgba(0, 0, 0, 0.3);
+  width: 500px;
+  height: 50vh;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+#tot1 {
+  position: absolute;
+  top: 40vh;
+  right: 0px;
+}
+#billCounter h3,
+#billCounter p {
+  margin: 20px;
+  font-size: large;
+  font-weight: 700;
+}
+#billCounter .fruitCount {
+  position: absolute;
+  right: 200px;
+}
+#billCounter .fruitTotal {
+  position: absolute;
+  right: 110px;
+}
+#total {
+  position: absolute;
+  right: 80px;
+  border-bottom: 4px double;
+  border-top: 1px solid;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+#billCounter h2 {
+  margin: 20px;
+}
