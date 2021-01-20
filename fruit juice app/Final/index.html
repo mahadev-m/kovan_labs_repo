@@ -1,1 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> </head>
+  <body>
+    <div class="fullContainer">
+      <div id="mainFrame">
+        <div id="heading">
+          <h1>Juice Shop</h1>
+        </div>
+        <div id="listContainer">
+          <h2>Juice List</h2>
+          <div id="products">
+            <table id="mytable">
+              <tr>
+                <th>Juice</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Add</th>
+              </tr>
+              <tr id="r1">
+                <td id="pr1" class="pr1">Apple</td>
+                <td id="p1">50</td>
+                <td class="countNo" id="c1">0</td>
+                <td>
+                  <button
+                    onclick="item1.noItems('btn1','c1','n1','t1','p1')"
+                    id="btn1"
+                  >
+                    Add
+                  </button>
+                </td>
+              </tr>
+              <tr id="r2">
+                <td id="pr1" class="pr1">Mango</td>
+                <td id="p2">40</td>
+                <td class="countNo" id="c2">0</td>
+                <td>
+                  <button
+                    onclick="item2.noItems('btn2','c2','n2','t2','p2')"
+                    id="btn2"
+                  >
+                    Add
+                  </button>
+                </td>
+              </tr>
+              <tr id="r3">
+                <td id="pr1" class="pr1">Orange</td>
+                <td id="p3">35</td>
+                <td class="countNo" id="c3">0</td>
+                <td>
+                  <button
+                    onclick="item3.noItems('btn3','c3','n3','t3','p3')"
+                    id="btn3"
+                  >
+                    Add
+                  </button>
+                </td>
+              </tr>
+              <tr id="r4">
+                <td id="pr1" class="pr1">Mosambi</td>
+                <td id="p4">40</td>
+                <td class="countNo" id="c4">0</td>
+                <td>
+                  <button
+                    onclick="item4.noItems('btn4','c4','n4','t4','p4')"
+                    id="btn4"
+                  >
+                    Add
+                  </button>
+                </td>
+              </tr>
+              <tr id="r5">
+                <td id="pr1" class="pr1">Grapes</td>
+                <td id="p5">20</td>
+                <td class="countNo" id="c5">0</td>
+                <td>
+                  <button
+                    onclick="item5.noItems('btn5','c5','n5','t5','p5')"
+                    id="btn5"
+                  >
+                    Add
+                  </button>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div id="confirmBtn">
+            <button>confirm</button>
+          </div>
+          <!-- <div id="clearBtn">
+            <button>clear</button>
+          </div> -->
+          <div id="addBtn">
+            <input
+              type="text"
+              value=""
+              placeholder=""
+              name="juice"
+              id="addJuice"
+            />
+            <input type="number" name="price" id="addPrice" />
+            <button
+              onclick="adding('addJuice','addPrice','mytable','billCounter')"
+            >
+              Add
+            </button>
+          </div>
+        </div>
+        <div id="bill">
+          <h2>List Of Bill</h2>
+          <div id="billCounter">
+            <p id="j1">
+              Apple<span class="fruitCount" id="n1">0</span>
+              <span class="fruitTotal" id="t1">0</span>
+            </p>
+            <p id="j2">
+              Mango <span class="fruitCount" id="n2">0</span>
+              <span class="fruitTotal" id="t2">0</span>
+            </p>
+            <p id="j3">
+              Orange <span class="fruitCount" id="n3">0</span>
+              <span class="fruitTotal" id="t3">0</span>
+            </p>
+            <p id="j4">
+              Mosambi <span class="fruitCount" id="n4">0</span>
+              <span class="fruitTotal" id="t4">0</span>
+            </p>
+            <p id="j5">
+              Grapes <span class="fruitCount" id="n5">0</span>
+              <span class="fruitTotal" id="t5">0</span>
+            </p>
+          </div>
 
+          <div id="tot1">
+            <h2><span id="total">0</span></h2>
+          </div>
+          <div id="print">
+            <button id="printBtn" onclick="print()" class="btnStyle">
+              Print
+            </button>
+          </div>
+          <div id="todaySales">
+            <h2>Today Sales</h2>
+            <span id="tdaySales">0</span>
+          </div>
+
+          <!-- <div id="t">
+            <h2>Bill Amount</h2>
+            <span id="tdaySales">0</span>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </body>
+</html>
