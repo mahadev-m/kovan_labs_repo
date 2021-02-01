@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+}
+.mainHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: chocolate;
+  color: white;
+}
+.list a {
+  color: white;
+  padding-right: 10px;
+  margin-right: 20px;
+}
+.image img {
+  border: 10px solid blue;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.image {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
